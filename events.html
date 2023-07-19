@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Events Management</title>
+</head>
+<body>
+    <h1 onclick="alert('Learning Events')">Exploring Events</h1>
+    <button onmousemove="handleClick()">Click me</button>
+    <button id="second">click me-1</button>
+    <button>click me-2</button>
+    <button id="last">click me-3</button>
+
+    <script>
+        const lastButton = document.getElementById('last').addEventListener('click', function(){
+            document.body.style.color = 'tomato';
+        })
+        //  function handleClick(){
+        //      // console.log(new Date());
+        //      // alert('Welcome to Event Handler');
+        //      document.body.style.backgroundColor = 'tomato';
+        //  }
+
+        const secondButton= document.getElementById('second');
+        // secondButton.onclick = function(){
+        //     console.log('Second person Clicked');
+        // }
+       // secondButton.onclick= handleClick;
+       //secondButton.addEventListener('click', handleClick)
+        
+    </script>
+</body>
+</html>
